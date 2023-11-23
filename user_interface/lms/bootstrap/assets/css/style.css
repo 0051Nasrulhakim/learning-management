@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Noto+Serif:wght@700&family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Ubuntu:wght@300;500&display=swap");
+.wrapper-page {
+  display: flex;
+}
+.wrapper-page .sidebar {
+  width: 16%;
+}
+.wrapper-page .sidebar .foto {
+  background-color: #364c70;
+}
+.wrapper-page .sidebar .foto .foto-section {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 145px;
+  background-color: white;
+}
+.wrapper-page .sidebar .foto .menu {
+  background-color: #213555;
+}
+.wrapper-page .sidebar .foto .menu li {
+  border-bottom: 1px dotted;
+  padding: 1.6%;
+  margin-left: -10%;
+  margin-right: 5%;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+.wrapper-page .sidebar .foto .menu li a {
+  color: white;
+  text-decoration: none;
+}
+.wrapper-page .sidebar .foto .menu li i {
+  margin-right: 5%;
+}
+.wrapper-page .sidebar .foto .menu .sub-menu {
+  display: none;
+  animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wrapper-page .sidebar .foto .menu .active .panah i {
+  rotate: -90deg;
+}
+.wrapper-page .sidebar .foto .menu .active .sub-menu {
+  display: block !important;
+}
+.wrapper-page .page {
+  width: 84%;
+}
+.wrapper-page .page .name-app {
+  height: 110px;
+  background-color: #213555;
+}
+.wrapper-page .page .name-app .text-1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 35pt;
+  text-align: center;
+  color: white;
+}
+.wrapper-page .page .name-app .text-2 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: white;
+}
+.wrapper-page .page .top-bar {
+  height: 36px;
+}
+.wrapper-page .page .top-bar .alert {
+  border-radius: 0px;
+  height: 36px;
+  display: flex;
+}
+.wrapper-page .page .top-bar .alert .left {
+  width: 70%;
+}
+.wrapper-page .page .top-bar .alert .left .breadcrumb {
+  margin-top: -12px;
+}
+.wrapper-page .page .top-bar .alert .right {
+  width: 30%;
+}
+.wrapper-page .page .top-bar .alert .right .text {
+  text-align: right;
+  margin-top: -12px;
+}
+.wrapper-page .page .page-content {
+  border: 1px solid;
+}
+.wrapper-page .page .page-content .user {
+  display: flex;
+  width: 99%;
+  justify-content: flex-end;
+  font-family: "Ubuntu", sans-serif;
+}
+.wrapper-page .page .page-content .user .pemisah {
+  margin-right: 5px;
+  margin-left: 5px;
+}/*# sourceMappingURL=style.css.map */

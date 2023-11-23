@@ -1,0 +1,44 @@
+<?= $this->extend('template/admin/section')?>
+<?= $this->section('content') ?>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+<div class="container-fluid">
+    <div class="section-content">
+        <div class="nama-menu">
+            Halaman Tahun Ajaran
+        </div>
+        <?php if (session()->getFlashdata('success') != null) : ?>
+            <div class="content" style="margin-bottom: -2%; margin-top: 0%;">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('success') ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <div class="content">
+            <div class="tahun_aktif">
+                <h5>Sekarang Tahun Ajaran :</h5>
+            </div>
+            <div class="section-dua" style="display: flex;">
+
+                <div class="left" style="width: 55%; padding: 1%; border: 1px solid #D0D4CA; border-radius: 10px; margin-right: 2%; box-shadow: 1px 1px #D0D4CA;" >
+                    <!-- table -->
+                    
+                </div>
+
+                <div class="right" style="border: 1px solid #D0D4CA; border-radius: 10px; width: 43%; padding: 1%; margin-bottom: 5%; box-shadow: 1px 1px #D0D4CA;">
+                    <div class="text text-center" style="margin-bottom: 1.5%;">
+                        <strong>
+                            <p id="judulForm"> FORM TAMBAH JURUSAN</p>
+                        </strong>
+                    </div>
+                    <!-- form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?= $this->endSection() ?>
